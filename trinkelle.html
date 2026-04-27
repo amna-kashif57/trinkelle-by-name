@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trinkelle by Amna</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fff1f7, #f3e8ff);
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px;
+  color: #5a3e6b;
+  animation: fadeDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  color: #7a5c8a;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+  color: #6d4c7d;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  animation: floatUp 1s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.price {
+  color: #a05dbb;
+  font-weight: bold;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #f8c8dc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e0c3fc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6d4c7d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes floatUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Trinkelle by Amna</h1>
+  <p>Soft • Elegant • Handmade Beaded Jewelry</p>
+</header>
+
+<div class="hero">
+  <h2>Welcome ✨</h2>
+  <p>Handcrafted jewelry made with love and soft aesthetic vibes.</p>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Pearl Bracelet</h3>
+    <p class="price">Rs 1200</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>Rose Necklace</h3>
+    <p class="price">Rs 1800</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>Crystal Set</h3>
+    <p class="price">Rs 2200</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>Soft Anklet</h3>
+    <p class="price">Rs 900</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>Golden Earrings</h3>
+    <p class="price">Rs 1500</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>Pastel Ring</h3>
+    <p class="price">Rs 700</p>
+    <button>View</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Trinkelle by Amna • Handmade with 💖
+</footer>
+
+<script>
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("More details coming soon ✨");
+  });
+});
+</script>
+
+</body>
+</html>
